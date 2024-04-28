@@ -1,0 +1,16 @@
+﻿FormatVersion: 7
+Name: "TransitionFlash 1"
+Script: "TransitionFlash"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  9bd5f2af5b264d77a7502de53c01dd98:
+    Name: ""
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

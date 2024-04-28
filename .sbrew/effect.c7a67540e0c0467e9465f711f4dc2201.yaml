@@ -1,0 +1,16 @@
+﻿FormatVersion: 7
+Name: "Credits 1"
+Script: "Credits"
+Multithreaded: No
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  c658caa5a8774b998cd110bae9e35656:
+    Name: ""
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
