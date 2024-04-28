@@ -15,7 +15,10 @@ namespace StorybrewScripts
     public class MappersText : StoryboardObjectGenerator
     {
         public override void Generate()
-        {            
+        {   
+            //Using lyrics would've been more efficient here but whatever, what's done is done.
+
+            //Variables for the text shadows
             var agagak2 = GetLayer("").CreateSprite("sb/texts/mappers/agagak.png", OsbOrigin.Centre);
             var banner2 = GetLayer("").CreateSprite("sb/texts/mappers/banner.png", OsbOrigin.Centre);
             var ch10ew2 = GetLayer("").CreateSprite("sb/texts/mappers/ch10ew.png", OsbOrigin.Centre);
@@ -24,6 +27,7 @@ namespace StorybrewScripts
             var kard2 = GetLayer("").CreateSprite("sb/texts/mappers/kardshark.png", OsbOrigin.Centre);
             var kpmy2 = GetLayer("").CreateSprite("sb/texts/mappers/kpmy.png", OsbOrigin.Centre);
 
+            //Variables for the actual white texts
 		    var agagak = GetLayer("").CreateSprite("sb/texts/mappers/agagak.png", OsbOrigin.Centre);
             var banner = GetLayer("").CreateSprite("sb/texts/mappers/banner.png", OsbOrigin.Centre);
             var ch10ew = GetLayer("").CreateSprite("sb/texts/mappers/ch10ew.png", OsbOrigin.Centre);

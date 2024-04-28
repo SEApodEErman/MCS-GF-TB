@@ -28,7 +28,7 @@ namespace StorybrewScripts
             var bggray = GetLayer("").CreateSprite("sb/bggray.jpg", OsbOrigin.Centre);
             var bggrayblurred = GetLayer("").CreateSprite("sb/bggrayblurred.jpg", OsbOrigin.Centre);
 
-
+            //Please ignore my tendency to keep changing around how I use the Fade method.
             // Normal BG
             bg.Scale(20483, 480.0f / bitmap.Height);
             
@@ -41,7 +41,6 @@ namespace StorybrewScripts
             bg.Fade(224483 , 1);
             bg.Fade(262884, 1);
             bg.Fade(282084,0);
-            //bg.Fade(EndTime, EndTime + 500, Opacity, 0);
 
             // Blurred BG
             bgblurred.Scale(41933, 480.0f / bitmap.Height);
@@ -58,7 +57,6 @@ namespace StorybrewScripts
             bgblurred.Scale(OsbEasing.OutExpo,185934,186083, 480.0f / bitmap.Height * 1.1,480.0f / bitmap.Height);
             bgblurred.Scale(OsbEasing.OutExpo,243684,243684 + 200, 480.0f / bitmap.Height, 480.0f / bitmap.Height * 1.1);
             bgblurred.Scale(OsbEasing.InExpo,253283 - 100,253283, 480.0f / bitmap.Height * 1.1,480.0f / bitmap.Height);
-            //bgblurred.Fade(EndTime, EndTime + 500, Opacity, 0);
             
             // Grayscaled BG
             bggray.Scale(10884, 480.0f / bitmap.Height);

@@ -1,3 +1,6 @@
+Originally wanted to use this for lyrics but I got lazy trying to think on how to actually use it so ended up just coverting them to .srt files.
+Keeping for posterity I guess.
+
 41484 浮かんで
 43433 転げ落ちて出会ったエンドロール
 46284 歪んで

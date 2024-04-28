@@ -17,15 +17,15 @@ namespace StorybrewScripts
         public override void Generate()
         {   
 
-            //The box (scrapping the box for now)
-		    //var box = GetLayer("").CreateSprite("sb/px.png", OsbOrigin.BottomCentre, new Vector2(50, 420));
-            //box.ColorHsb(20483,20, 1, 33);
-            //box.ScaleVec(20483,100,30);
-            //box.Fade(20483,20483 + 10000, 0.8 , 0.8);
+            //The shadow (scrapping thos shadow implementation for now)
+		    //var shadow = GetLayer("").CreateSprite("sb/px.png", OsbOrigin.BottomCentre, new Vector2(50, 420));
+            //shadow.ColorHsb(20483,20, 1, 33);
+            //shadow.ScaleVec(20483,100,30);
+            //shadow.Fade(20483,20483 + 10000, 0.8 , 0.8);
 
             var shadow = GetLayer("").CreateSprite("sb/mpfp/agagak.jpg", OsbOrigin.Centre);
             
-            //Variables for mappers pfp and names
+            //Variables for mappers pfps
             var agagak = GetLayer("").CreateSprite("sb/mpfp/agagak.jpg", OsbOrigin.Centre);
             var banner = GetLayer("").CreateSprite("sb/mpfp/banner.jpg", OsbOrigin.Centre);
             var ch10ew = GetLayer("").CreateSprite("sb/mpfp/ch10ew.jpg", OsbOrigin.Centre);
@@ -34,7 +34,7 @@ namespace StorybrewScripts
             var kard = GetLayer("").CreateSprite("sb/mpfp/kard.jpg", OsbOrigin.Centre);
             var kpmy = GetLayer("").CreateSprite("sb/mpfp/kpmy.jpg", OsbOrigin.Centre);
 
-            //shadow
+            //shadow (I can't be arsed to ScaleVec a pixel for this, it takes too long for me to trial and error so let's just work around that with this)
             shadow.Scale(10883,0.22);
             shadow.Color(10883,Color4.Black);
             shadow.Move(10883,-24,395 + 30);

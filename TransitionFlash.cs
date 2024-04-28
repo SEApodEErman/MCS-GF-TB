@@ -22,8 +22,10 @@ namespace StorybrewScripts
             var bitmap = GetMapsetBitmap("sb/tp.png");
             var tp = GetLayer("").CreateSprite("sb/tp.png", OsbOrigin.Centre);
             
-            //Forced to add credits here cuz yes
-            var credits = GetLayer("").CreateSprite("sb/credits.png", OsbOrigin.Centre);
+            //Forced to add credits here cuz the White background and black bars at the end is in here.
+
+            //Storybrew keeps warning me about frame buffer or whatever but it seems to work fine without any noticable performance hit so whatever.
+            var credits = GetLayer("").CreateSprite("sb/credits.png", OsbOrigin.Centre);// Yes I'm using a long ass image that scrolls for the credit instead of needing to use a billion individual images for everyone.
             var sthx = GetLayer("").CreateSprite("sb/sthx.png", OsbOrigin.Centre);
             var fmth = GetLayer("").CreateSprite("sb/fmth.png", OsbOrigin.Centre);            
 
@@ -55,12 +57,13 @@ namespace StorybrewScripts
             b1.Color(18083, Color4.Black);
             b2.Color(18083, Color4.Black);
             
-            //Ok I lied, so what
+            //Ok I lied, but I'll only use it for this transition thingy because I only know how to do it properly here.
             b1.ScaleVec(OsbEasing.InExpo, 18083, 19284, 864, 0, 864, 240);
             b2.ScaleVec(OsbEasing.InExpo, 18083, 19284, 864, 0, 864, 240);
 
-            // Ok idk what happened here but it just killed everything it seems
+            // Ok IDK what happened here but it just killed everything it seems
             // So it's time for a hack
+            // UPDATE: I know why but I cba to change everything and it doesn't seem to break anything so we're staying with this.
             b1.ScaleVec(20483,864, 0);
             b2.ScaleVec(20483,864, 0);
 
@@ -81,6 +84,7 @@ namespace StorybrewScripts
 
             b2.ScaleVec(224483,864, 0);
 
+            //This is so ass but I guess that happens when you need to put something in between two (now three) things that's inside a single script.
             credits.Scale(297089,0.3);
             credits.Move(297089,325277,320,1200,320,-760);
             credits.Fade(297089,1);
@@ -95,7 +99,6 @@ namespace StorybrewScripts
             fmth.Move(327290,320,240);
             fmth.Fade(327290,327290 + 400,0,1);
             fmth.Fade(OsbEasing.In,328498,331720, 1, 0);
-
 
             b1.ScaleVec(OsbEasing.Out, 262584, 262884, 864, 0, 864, 240);
             b2.ScaleVec(OsbEasing.Out, 262584, 262884, 864, 0, 864, 240);

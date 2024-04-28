@@ -17,18 +17,24 @@ namespace StorybrewScripts
         public override void Generate()
         {
             
-		    
+		    //Variables for each text
+            //The reason the arrangements is somewhat "backwards" for each group was because I originally had something else in mind.
             var gftb = GetLayer("").CreateSprite("sb/texts/gftb.png", OsbOrigin.Centre);
             var mccs = GetLayer("").CreateSprite("sb/texts/mccs.png", OsbOrigin.Centre);
+
             var take = GetLayer("").CreateSprite("sb/texts/takehirotei.png", OsbOrigin.Centre);
             var custom = GetLayer("").CreateSprite("sb/texts/customby.png", OsbOrigin.Centre);
+
             var remix = GetLayer("").CreateSprite("sb/texts/remix.png", OsbOrigin.Centre);
             var admm = GetLayer("").CreateSprite("sb/texts/additional.png", OsbOrigin.Centre);
+
             var cpod = GetLayer("").CreateSprite("sb/texts/cpod.png", OsbOrigin.Centre);
             var sbhs = GetLayer("").CreateSprite("sb/texts/sbhs.png", OsbOrigin.Centre);
+            
             var hf = GetLayer("").CreateSprite("sb/texts/hf.png", OsbOrigin.Centre);
             var gl = GetLayer("").CreateSprite("sb/texts/gl.png", OsbOrigin.Centre);
 
+            //Everything below is self explainatory.
             gftb.Move(1284,320,240);
             gftb.Scale(OsbEasing.OutExpo,1284,1284 + 300,2,0.55);
             gftb.Fade(1284,1);

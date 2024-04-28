@@ -11,6 +11,7 @@ namespace StorybrewScripts
 {
     public class LyricsXYpos : StoryboardObjectGenerator
     {
+        //IDK why I used this instead of the regular Lyrics script but whatever I guess.
         [Description("Path to a .sbv, .srt, .ass or .ssa file in your project's folder.\nThese can be made with a tool like aegisub.")]
         [Configurable] public string SubtitlesPath = "lyrics.srt";
 
